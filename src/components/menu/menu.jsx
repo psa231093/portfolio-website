@@ -1,8 +1,8 @@
 import "./menu.scss";
 
-export default function menu() {
+export default function menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className="menu">
+    <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li>
           <a href="#intro">Home</a>
